@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Recognition</title>
+    <style>
+        body{
+            background-color: rgb(255, 248, 189);
+            color: deeppink;
+        }
+        #camera{
+            height: 250px;
+            width: 360px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Image Recognition</h1>
+        <h5>Kindly click 'Allow' for the camera permissions.</h5>
+        <br>
+        <h4>This is the list of people the camera can identify:</h4>
+        <p style="font-size: 25px;"><b>Males</b></p>
+        <p style="font-size: 25px;"><b>Females</b></p><hr>
+        <h3>Webcam</h3>
+        <div id="camera"></div>
+        <br>
+        <div id="result"></div>
+        <button class="btn btn-info">Click A Selfie</button>
+        <button class="btn btn-info">Identify The Image</button>
+        <br><br>
+        <p>Person: <span id="person"></span></p>
+        <p>Accuracy: <span id="accuracy"></span></p>
+    </center>
+    <script>
+        // https://teachablemachine.withgoogle.com/models/nJfkCmp2p/
+    </script>
+</body>
+
+</html>
